@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+// import JsxBasics from "./pages/2.2-jsx-basics/2.2-jsx-basics";
 
 function App() {
   return (
