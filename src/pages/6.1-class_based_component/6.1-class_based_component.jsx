@@ -1,5 +1,6 @@
 
-import "./4.2-cards.css";
+import React from 'react';
+import "./6.1-class_based_component.css";
 import faker from "faker";
 
 function Link(props) {
@@ -22,11 +23,13 @@ function Card() {
   )
 }
 
-function Cards() {
-  return <div className="flex">
-    <Card />
-    <Card />
-  </div>
+class Cards extends React.PureComponent {
+  render() {
+    return <div className="flex">
+      <Card />
+      <Card />
+    </div>
+  }
 }
 
 export default Cards;
