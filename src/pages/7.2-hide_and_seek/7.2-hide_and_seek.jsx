@@ -1,4 +1,5 @@
 import React from "react";
+import "./7.2-hide_and_seek.css"
 
 class App extends React.Component {
   constructor() {
@@ -15,10 +16,10 @@ class App extends React.Component {
   render() {
     console.log(this.state.isMenuVisible);
     return (
-      <div className="App">
+      <div>
         <button onClick={this.menuToggler}>Click Me!</button>
         <br />
-        {this.state.isMenuVisible && <div>Menu</div>}
+        {this.state.isMenuVisible && <div className="yellow-block"></div>}
       </div>
     );
   }
