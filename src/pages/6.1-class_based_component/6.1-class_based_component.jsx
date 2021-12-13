@@ -7,9 +7,9 @@ function Link(props) {
   return <a className="link" href={faker.internet.url()}>{props.text}</a>
 }
 
-function Card() {
-  return (
-    <div className="card">
+class Card extends React.Component {
+  render() {
+    return (<div className="card">
       <div className="img-mask">
         <img src={faker.image.image()} alt="" />
       </div>
@@ -20,10 +20,11 @@ function Card() {
         <Link text="SHARE" />
       </div>
     </div>
-  )
+    )
+  }
 }
 
-class Cards extends React.PureComponent {
+class Cards2 extends React.Component {
   render() {
     return <div className="flex">
       <Card />
@@ -32,4 +33,4 @@ class Cards extends React.PureComponent {
   }
 }
 
-export default Cards;
+export default Cards2;
