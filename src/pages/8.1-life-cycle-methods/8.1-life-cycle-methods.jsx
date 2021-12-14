@@ -1,8 +1,8 @@
 import React from "react";
 
 class FavoriteColor extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = { favoriteColor: "pink" }
   }
 
@@ -29,6 +29,9 @@ class FavoriteColor extends React.Component {
 }
 
 export default FavoriteColor;
+
+
+
 
 
 
