@@ -1,10 +1,8 @@
 import React from "react";
 
 class FavoriteColor extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { favoriteColor: "pink" }
-  }
+
+  state = { favoriteColor: "pink" }
 
   componentDidMount() {
     setTimeout(() => {

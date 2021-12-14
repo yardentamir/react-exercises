@@ -11,9 +11,10 @@ import reportWebVitals from "./reportWebVitals";
 //import Cards2 from "./pages/6.1-class_based_component/6.1-class_based_component";
 // import Increment from "./pages/7.1-increment/7.1-increment";
 //import HideAndSeek from "./pages/7.2-hide_and_seek/7.2-hide_and_seek";
-import FavoriteColor from "./pages/8.1-life-cycle-methods/8.1-life-cycle-methods";
+// import FavoriteColor from "./pages/8.1-life-cycle-methods/8.1-life-cycle-methods";
+import BoxAnimation from "./pages/8.1-box_animation/8.1-box_animation";
 
-ReactDOM.render(<FavoriteColor />, document.getElementById("root"));
+ReactDOM.render(<BoxAnimation />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

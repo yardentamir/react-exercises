@@ -1,0 +1,22 @@
+.box {
+  background-color: red;
+  margin-top: 20px;
+}
+
+.start-animation {
+  animation-name: slide-in;
+  animation-duration: 4s;
+}
+
+.showToggler {
+  display: none;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
