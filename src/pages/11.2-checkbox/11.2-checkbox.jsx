@@ -11,7 +11,7 @@ const checkboxes = [
 export default class CheckBox extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isCheckedState: props.checked };
+    this.state = { isCheckedState: "" };
   }
 
   updateChecked = (isChecked) => {
