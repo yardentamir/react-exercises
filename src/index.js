@@ -13,10 +13,11 @@ import reportWebVitals from "./reportWebVitals";
 //import HideAndSeek from "./pages/7.2-hide_and_seek/7.2-hide_and_seek";
 // import FavoriteColor from "./pages/8.1-life-cycle-methods/8.1-life-cycle-methods";
 //import BoxAnimation from "./pages/8.1-box_animation/8.1-box_animation";
-import ChangingBox from "./pages/8.2-Changing_Box/8.2-Changing_Box";
+//import ChangingBox from "./pages/8.2-Changing_Box/8.2-Changing_Box";
 //import Spinner from "./pages/9.1-spinner/9.1-spinner";
+import ChildToParent from "./pages/11.1-child_to_parent/11.1-child_to_parent";
 
-ReactDOM.render(<ChangingBox />, document.getElementById("root"));
+ReactDOM.render(<ChildToParent />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
