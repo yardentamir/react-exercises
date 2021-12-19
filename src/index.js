@@ -17,9 +17,10 @@ import reportWebVitals from "./reportWebVitals";
 //import Spinner from "./pages/9.1-spinner/9.1-spinner";
 //import ChildToParent from "./pages/11.1-child_to_parent/11.1-child_to_parent";
 //import CheckBox from "./pages/11.2-checkbox/11.2-checkbox";
-import FormReview from "./pages/11.3-form_review/11.3-form_review";
+// import FormReview from "./pages/11.3-form_review/11.3-form_review";
+import APIRequest from "./pages/12.1-chuck_nuris/12.1-chuck_nuris";
 
-ReactDOM.render(<FormReview />, document.getElementById("root"));
+ReactDOM.render(<APIRequest />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,8 +1,8 @@
 import React from 'react';
-import InputTextComp from './Components/11.3-InputTextComp';
-import SelectComp from './Components/11.3-SelectComp';
-import TextareaComp from './Components/11.3-TextareaComp';
-import ButtonComp from './Components/11.3-ButtonComp';
+import InputTextComp from '../../Components/11.3-InputTextComp';
+import SelectComp from '../../Components/11.3-SelectComp';
+import TextareaComp from '../../Components/11.3-TextareaComp';
+import ButtonComp from '../../Components/11.3-ButtonComp';
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -43,7 +43,7 @@ export default class Form extends React.Component {
             <p>Last Name: <br />{this.state.Lname}</p>
             <p>Age: <br />{this.state.Age}</p>
             <p>Some Text:<br />{this.state.TextArea}</p>
-            <ButtonComp />
+            <ButtonComp type="submit" value="Submit" text="Continue" />
           </div>
         }
       </form>)
