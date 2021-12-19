@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}

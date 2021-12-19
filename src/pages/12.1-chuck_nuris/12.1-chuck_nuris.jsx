@@ -11,7 +11,7 @@ export default class CheckNuris extends React.Component {
   }
 
   getDataApiRequest = async (type) => {
-    return axios.get(`https://api.chucknorris.io/jokes/${type}`).then(res => {
+    axios.get(`https://api.chucknorris.io/jokes/${type}`).then(res => {
       switch (type) {
         case "random":
           this.setState({ randomJoke: res.data.value });
@@ -53,28 +53,3 @@ export default class CheckNuris extends React.Component {
     )
   }
 }
-
-
-
-
-// export default class PersonList extends React.Component {
-//   state = {
-//     persons: []
-//   }
-
-//   componentDidMount() {
-//     axios.get(`https://jsonplaceholder.typicode.com/users`)
-//       .then(res => {
-//         const persons = res.data;
-//         this.setState({ persons });
-//       })
-//   }
-
-//   render() {
-//     return (
-//       <ul>
-//         {this.state.persons.map(person => <li>{person.name}</li>)}
-//       </ul>
-//     )
-//   }
-// }

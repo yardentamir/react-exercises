@@ -5,7 +5,7 @@ import InputTextComp from '../../Components/11.3-InputTextComp';
 
 export default class Avatars extends React.Component {
 
-  state = { avatarDetails: [], filterdArr: [], arrNamesFilterd: [], count: 0 };
+  state = { avatarDetails: [], filterdArr: [] };
 
 
   componentDidMount = () => {
@@ -28,17 +28,6 @@ export default class Avatars extends React.Component {
     this.setState((pervState) => {
       return pervState.filterdArr = filterdArr1;
     });
-    filterdArr1.forEach((person) => {
-      this.setState((pervState) => {
-        return pervState.arrNamesFilterd.push(person.name.first);
-      });
-    })
-    console.log(this.state.arrNamesFilterd)
-
-    this.setState((pervState) => {
-      return pervState.filterdArr = filterdArr1;
-    });
-    console.log(this.state.filterdArr[0] && this.state.filterdArr[0].name.first)
   }
 
 
@@ -54,7 +43,7 @@ export default class Avatars extends React.Component {
 
             return (
 
-              <div key={"div" + index} className={`${this.state.arrNamesFilterd[index].name.first === person.name.first ? "display-block" : "display-none"}`}>
+              <div key={"div" + index} >
                 <div key={person.name.first + person.name.last + index}>{person.name.first} {person.name.last}</div>
                 <img key={person.name.first + person.large + index} src={person.large} alt={person.name.first} />
               </div>
