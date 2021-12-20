@@ -3,7 +3,7 @@ import axios from 'axios';
 import "./13.1-avatar.css";
 import Button from '@mui/material/Button';
 import { v4 as uuidv4 } from 'uuid';
-import InputTextComp from '../../Components/11.3-InputTextComp';
+import InputTextComp from '../../Components/CustumeInput';
 
 export default class Avatars extends React.Component {
 

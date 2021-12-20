@@ -1,5 +1,5 @@
 import React from 'react';
-import InputTextComp from '../../Components/11.3-InputTextComp';
+import InputTextComp from '../../Components/CostumeInput';
 import SelectComp from '../../Components/11.3-SelectComp';
 import TextareaComp from '../../Components/11.3-TextareaComp';
 import Button from '@mui/material/Button';
@@ -18,7 +18,6 @@ export default class Form extends React.Component {
 
     console.log(this.textInput)
     this.textInput.current.addEventListener('load', () => {
-      console.log("here");
       this.textInput.current.focus();
     })
   }
@@ -41,8 +40,8 @@ export default class Form extends React.Component {
         {this.state.isNotSubmitted ?
           (
             <>
-              <InputTextComp name="Fname" text="First Name:" value={this.state.Fname} callback={this.handleChange} />
-              <InputTextComp name="Lname" text="Last Name:" value={this.state.Lname} callback={this.handleChange} />
+              <InputTextComp type="text" name="Fname" text="First Name:" value={this.state.Fname} focus={true} callback={this.handleChange} />
+              <InputTextComp type="text" name="Lname" text="Last Name:" value={this.state.Lname} callback={this.handleChange} />
               <TextField id="filled-basic" label="Filled" variant="filled" ref={this.textInput} />
               <SelectComp name="Age" text="Age:" value={this.state.Age} callback={this.handleChange} />
               <TextareaComp name="TextArea" text="Some Text:" value={this.state.TextArea} callback={this.handleChange} />

@@ -6,13 +6,14 @@ export default class InputText extends React.Component {
     this.textInput = React.createRef();
   }
   componentDidMount() {
-    // this.textInput.current.focus();
+    if (this.props.focus) this.textInput.current.focus();
   }
+
   render() {
     return (
       <div>
         <label htmlFor="var">{this.props.text}
-          <input ref={this.textInput} type="text" id="var" onChange={this.props.callback} value={this.props.value} name={this.props.name} />
+          <input ref={this.textInput} focus="true" type={this.props.type} id="var" onChange={this.props.callback} value={this.props.value} name={this.props.name} />
         </label>
       </div>
     )

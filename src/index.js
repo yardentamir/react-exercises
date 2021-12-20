@@ -22,6 +22,7 @@ import reportWebVitals from "./reportWebVitals";
 // import DataMassaging from "./pages/12.2-data_massaging/12.2-data_massaging";
 // import Avatars from "./pages/13.1-avatars/13.1-avatars";
 import FocusInputs from "./pages/14.1-focus/14.1-focus";
+//import TextCopy from "./pages/14.2-text_copy/14.2-text_copy";
 
 ReactDOM.render(<FocusInputs />, document.getElementById("root"));
 
