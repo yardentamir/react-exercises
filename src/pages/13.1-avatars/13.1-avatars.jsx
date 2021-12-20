@@ -1,6 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import axios from 'axios';
 import "./13.1-avatar.css";
+import Button from '@mui/material/Button';
+import { v4 as uuidv4 } from 'uuid';
 import InputTextComp from '../../Components/11.3-InputTextComp';
 
 export default class Avatars extends React.Component {
@@ -36,16 +38,16 @@ export default class Avatars extends React.Component {
       <div>
         <div>
           <InputTextComp text="Search Avatar:" callback={({ target: { value } }) => this.findAvatar(value)} />
+          <Button variant="contained">Contained</Button>
         </div>
-
         <div className="flex">
           {this.state.avatarDetails.map((person, index) => {
 
             return (
 
-              <div key={"div" + index} >
-                <div key={person.name.first + person.name.last + index}>{person.name.first} {person.name.last}</div>
-                <img key={person.name.first + person.large + index} src={person.large} alt={person.name.first} />
+              <div key={uuidv4()} >
+                <div key={uuidv4()}>{person.name.first} {person.name.last}</div>
+                <img key={uuidv4()} src={person.large} alt={person.name.first} />
               </div>
 
             )

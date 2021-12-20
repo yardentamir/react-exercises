@@ -20,9 +20,10 @@ import reportWebVitals from "./reportWebVitals";
 // import FormReview from "./pages/11.3-form_review/11.3-form_review";
 // import APIRequest from "./pages/12.1-chuck_nuris/12.1-chuck_nuris";
 // import DataMassaging from "./pages/12.2-data_massaging/12.2-data_massaging";
-import Avatars from "./pages/13.1-avatars/13.1-avatars";
+// import Avatars from "./pages/13.1-avatars/13.1-avatars";
+import FocusInputs from "./pages/14.1-focus/14.1-focus";
 
-ReactDOM.render(<Avatars />, document.getElementById("root"));
+ReactDOM.render(<FocusInputs />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
