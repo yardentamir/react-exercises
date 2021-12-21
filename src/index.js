@@ -23,9 +23,10 @@ import reportWebVitals from "./reportWebVitals";
 // import Avatars from "./pages/13.1-avatars/13.1-avatars";
 // import FocusInputs from "./pages/14.1-focus/14.1-focus";
 //import TextCopy from "./pages/14.2-text_copy/14.2-text_copy";
-import ReactRouter from "./pages/16.1-react_router/16.1-react_router";
+// import ReactRouter from "./pages/16.1-react_router/16.1-react_router";
+import TodoAppClass from "./pages/todos_class/todoApp";
 
-ReactDOM.render(<ReactRouter />, document.getElementById("root"));
+ReactDOM.render(<TodoAppClass />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
