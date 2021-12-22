@@ -38,8 +38,9 @@ export default class TodoList extends React.PureComponent {
     return (
       <div key={uuidv4()} className="todo" ref={this.todosRef}>
         <li>{this.props.todo.value}</li>
-        <span><i id={this.props.todo.id} className="far fa-trash-alt" onClick={this.props.deleteCallBack} ></i></span>
-        <span><i id={this.props.todo.id} ref={this.iconRef} className="far check-icon" onClick={this.props.checkCallBack} ></i></span>
+        <span><i className="far fa-trash-alt" onClick={() => this.props.deleteCallBack(this.props.todo.id)} ></i></span>
+        <span><i className="far fa-edit" onClick={() => this.props.editTodo(this.props.todo.id)}></i></span>
+        <span><i ref={this.iconRef} className="far check-icon" onClick={() => this.props.checkCallBack(this.props.todo.id)} ></i></span>
       </div>
     )
   }

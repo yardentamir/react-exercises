@@ -31,7 +31,7 @@ export default class TodoApp extends React.Component {
 
   addTodo = (event) => {
     event.preventDefault();
-    const newTodo = { id: uuidv4(), value: this.state.newTodo, isChecked: false };
+    const newTodo = { id: uuidv4(), value: this.state.newTodo, isChecked: false, editMode: false };
     this.setState(prevState => ({
       todoList: [...prevState.todoList, newTodo]
     }));
@@ -51,6 +51,14 @@ export default class TodoApp extends React.Component {
     });
   };
 
+  editTodo = (currentTodoId) => {
+    const getTodoObj = this.state.todoList.find(todo => todo.id === currentTodoId);
+    const TodoIndex = this.state.todoList.indexOf(getTodoObj);
+    this.setState((pervState) => {
+      return pervState.todoList[TodoIndex].editMode = !pervState.todoList[TodoIndex].editMode;
+    });
+  }
+
 
 
   render = () => {
@@ -63,7 +71,7 @@ export default class TodoApp extends React.Component {
             <ul className="todo-list">
               {this.state.todoList.map((todo) => {
                 return (
-                  <TodoItem key={uuidv4()} filerChoose={this.state.filerChoose} todo={todo} checkCallBack={({ target: { id } }) => this.isChecked(id)} deleteCallBack={({ target: { id } }) => this.deleteTodo(id)} />
+                  <TodoItem key={uuidv4()} editTodo={this.editTodo} filerChoose={this.state.filerChoose} todo={todo} checkCallBack={this.isChecked} deleteCallBack={this.deleteTodo} />
                 )
               })}
             </ul>

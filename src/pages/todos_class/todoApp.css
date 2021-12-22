@@ -22,17 +22,15 @@ body {
   font-family: "Zen Kurenaido", sans-serif;
 }
 
+#root {
+  width: 40%;
+}
+
 header {
-  height: 10vh;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   color: var(--primaryColor);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .form-container {
@@ -40,10 +38,10 @@ header {
 }
 
 form {
-  width: 25rem;
   background-color: var(--mainWhite);
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 form input {
@@ -103,7 +101,8 @@ form button:hover {
   color: var(--primaryColor);
 }
 
-.fa-trash-alt {
+.fa-trash-alt,
+.fa-edit {
   color: var(--mainRed);
 }
 
@@ -125,7 +124,7 @@ select {
   margin-left: 1rem;
   background-color: var(--mainWhite);
   cursor: pointer;
-  width: 10rem;
+  /* width: 10rem; */
   font-weight: bold;
   position: relative;
 }
