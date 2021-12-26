@@ -1,29 +1,43 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import CustomButton from "../../Components/CustomButton";
 
 export default function ShowText() {
 
-  const [todosState, setTodos] = useState([
-    { name: "CSS", completed: true },
-    { name: "JavaScript", completed: true },
-    { name: "Learn React", completed: false },
-    { name: "Learn mongoDB", completed: false },
-    { name: "Learn Node JS", completed: false },
-  ]);
+  const InitialState = [{ num: "one", isChecked: false }, { num: "two", isChecked: false }, { num: "three", isChecked: false }, { num: "four", isChecked: false }, { num: "five", isChecked: false }];
+  const [checkboxState, setCheckbox] = useState(InitialState);
 
-  const renderTodos = () => {
-    return todosState.map((todo, index) => {
-      return <div key={index} style={{ textDecoration: !todo.completed && "line-through" }} onClick={() => changeState(index)}>{todo.name} {todo.completed ? <span> &#10003;</span> : <span> &#10060;</span>}</div>;
+  const renderCheckBoxes = () => {
+    return checkboxState.map((value, index) => {
+      return (<div key={value.num}>
+        <input type="checkbox" id={value.num} value={value.isChecked} onChange={() => handleChange(index)} />
+        <label htmlFor={value.num}> {value.num}</label><br />
+      </div>)
     })
   }
 
-  const changeState = (index) => {
-    setTodos(prevState => [...prevState, todosState[index].completed = !todosState[index].completed]);
+  const handleDelete = () => {
+    const filteredArr = checkboxState.filter((item) => !item.isChecked);
+    setCheckbox(filteredArr);
+  }
+
+  const handleChange = (index) => {
+    const data = [...checkboxState];
+    data[index].isChecked = !data[index].isChecked;
+    setCheckbox(data);
+  }
+
+  const handleReset = () => {
+    setCheckbox(InitialState);
   }
 
 
   return (
     <div>
-      {renderTodos()}
+      <CustomButton text="delete" callback={handleDelete} />
+      <CustomButton text="reset" callback={handleReset} />
+      <br />
+      {renderCheckBoxes()}
     </div>
   )
 }
