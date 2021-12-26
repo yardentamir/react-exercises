@@ -27,9 +27,10 @@ import reportWebVitals from "./reportWebVitals";
 // import TodoAppClass from "./pages/todos_class/todoApp";
 // import CRUDTestApp from "./pages/CRUD-test/main";
 // import HooksUseState from "./pages/18.1-hooks-usestate/18.1-hooks-usestate";
-import SimpleTodoUseState from "./pages/18.2-simple_todo/18.2-simple-todo";
+// import SimpleTodoUseState from "./pages/18.2-simple_todo/18.2-simple-todo";
+import WhatTheTimeUseState from "./pages/18.3-whats_the_time/18.3-what_the_time";
 
-ReactDOM.render(<SimpleTodoUseState />, document.getElementById("root"));
+ReactDOM.render(<WhatTheTimeUseState />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

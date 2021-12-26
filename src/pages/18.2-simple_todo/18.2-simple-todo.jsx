@@ -12,7 +12,7 @@ export default function ShowText() {
 
   const renderTodos = () => {
     return todosState.map((todo, index) => {
-      return <div key={index} style={{ textDecoration: !todo.completed ? "line-through" : "none" }} onClick={() => changeState(index)}>{todo.name}</div>;
+      return <div key={index} style={{ textDecoration: !todo.completed && "line-through" }} onClick={() => changeState(index)}>{todo.name} {todo.completed ? <span> &#10003;</span> : <span> &#10060;</span>}</div>;
     })
   }
 
