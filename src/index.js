@@ -26,9 +26,10 @@ import reportWebVitals from "./reportWebVitals";
 // import ReactRouter from "./pages/16.1-react_router/16.1-react_router";
 // import TodoAppClass from "./pages/todos_class/todoApp";
 // import CRUDTestApp from "./pages/CRUD-test/main";
-import HooksUseState from "./pages/18.1-hooks-usestate/18.1-hooks-usestate";
+// import HooksUseState from "./pages/18.1-hooks-usestate/18.1-hooks-usestate";
+import SimpleTodoUseState from "./pages/18.2-simple_todo/18.2-simple-todo";
 
-ReactDOM.render(<HooksUseState />, document.getElementById("root"));
+ReactDOM.render(<SimpleTodoUseState />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
