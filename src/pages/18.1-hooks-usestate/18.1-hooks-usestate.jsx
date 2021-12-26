@@ -5,13 +5,13 @@ export default function ShowText({ str = "some text make long text please", maxL
 
   const [hideState, setHide] = useState(true);
 
-  const renderHalfText = () => {
+  const renderText = () => {
     const shortText = str.slice(0, maxLength);
-    return <p>{shortText}...<button onClick={updateState}>Read more</button></p>
-  }
-
-  const renderFullText = () => {
-    return <p>{str}<button onClick={updateState}>Less more</button></p>
+    if (hideState) {
+      return <p>{shortText}...<button onClick={updateState}>Read more</button></p>
+    } else {
+      return <p>{str}<button onClick={updateState}>Less more</button></p>
+    }
   }
 
   const updateState = () => {
@@ -20,7 +20,7 @@ export default function ShowText({ str = "some text make long text please", maxL
 
   return (
     <div>
-      {hideState ? renderHalfText() : renderFullText()}
+      {renderText()}
     </div>
   )
 }
