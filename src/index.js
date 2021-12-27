@@ -30,9 +30,10 @@ import reportWebVitals from "./reportWebVitals";
 // import SimpleTodoUseState from "./pages/18.2-simple_todo/18.2-simple-todo";
 // import WhatTheTimeUseState from "./pages/18.3-whats_the_time/18.3-what_the_time";
 // import MarkingAndDeleting from "./pages/18.4-marking_and_deleting/18.4-marking_and_deleting";
-import SimpleFetch from "./pages/18.5-simple_fetch/18.5-simple_fetch";
+// import SimpleFetch from "./pages/18.5-simple_fetch/18.5-simple_fetch";
+import CountriesOfTheWorld from "./pages/19.2-countries/19.2-countries";
 
-ReactDOM.render(<SimpleFetch />, document.getElementById("root"));
+ReactDOM.render(<CountriesOfTheWorld />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
