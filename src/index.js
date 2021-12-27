@@ -29,9 +29,10 @@ import reportWebVitals from "./reportWebVitals";
 // import HooksUseState from "./pages/18.1-hooks-usestate/18.1-hooks-usestate";
 // import SimpleTodoUseState from "./pages/18.2-simple_todo/18.2-simple-todo";
 // import WhatTheTimeUseState from "./pages/18.3-whats_the_time/18.3-what_the_time";
-import MarkingAndDeleting from "./pages/18.4-marking_and_deleting/18.4-marking_and_deleting";
+// import MarkingAndDeleting from "./pages/18.4-marking_and_deleting/18.4-marking_and_deleting";
+import SimpleFetch from "./pages/18.5-simple_fetch/18.5-simple_fetch";
 
-ReactDOM.render(<MarkingAndDeleting />, document.getElementById("root"));
+ReactDOM.render(<SimpleFetch />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
