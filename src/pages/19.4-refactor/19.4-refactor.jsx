@@ -37,16 +37,16 @@ export default function CheckNuris() {
   const renderCategories = () => {
     return categories.map((category, index) => {
       return (
-        <>
+        <div key={category + index}>
           <br />
-          <ButtonComp key={category + index} text={category} value={category} callback={({ target: { value } }) => setwhichButton(`random?category=${value}`)} />
-        </>
+          <ButtonComp text={category} value={category} callback={({ target: { value } }) => setwhichButton(`random?category=${value}`)} />
+        </div>
       )
     })
   }
 
   return (
-    <div>
+    <>
       <ButtonComp key="randomJokeNuris" callback={() => setwhichButton("random")} text="GET JOKE" />
       <br />
       {randomJoke}
@@ -55,7 +55,7 @@ export default function CheckNuris() {
       {categories && renderCategories()}
       <br /><br />
       {jokeBasedOnCategory}
-    </div>
+    </>
   )
 
 }
