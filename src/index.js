@@ -36,9 +36,10 @@ import reportWebVitals from "./reportWebVitals";
 // import RefactorApiFunctions from "./pages/19.4-refactor/19.4-refactor";
 // import CancelRequest from "./pages/20.1-cancel_request/20.1-cancel_request";
 // import UseRefEditing from "./pages/21.1-editing/21.1-editing";
-import PlayPause from "./pages/21.2-play_pause/21.2-play_pause";
+// import PlayPause from "./pages/21.2-play_pause/21.2-play_pause";
+import ImageToggle from "./pages/21.3-image_toggle/21.3-image_toggle";
 
-ReactDOM.render(<PlayPause />, document.getElementById("root"));
+ReactDOM.render(<ImageToggle />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
