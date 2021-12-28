@@ -10,6 +10,7 @@ export default class CheckNuris extends React.Component {
     jokeBasedOnCategory: "",
   }
 
+  
   getDataApiRequest = async (type) => {
     axios.get(`https://api.chucknorris.io/jokes/${type}`).then(res => {
       switch (type) {

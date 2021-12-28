@@ -33,6 +33,7 @@ export default function ShowText() {
   }, [termState]);
 
 
+
   const renderData = () => {
     return dataState.map(countryName => {
       return (<ul>

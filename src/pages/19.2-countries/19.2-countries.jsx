@@ -11,10 +11,13 @@ export default function ShowText() {
   useEffect(() => {
     const getData = async () => {
       const { data } = await axios.get('https://intense-mesa-62220.herokuapp.com/https://restcountries.herokuapp.com/api/v1/');
-      data.forEach((countryInfo) => {
-        setData(oldArray => [...oldArray, countryInfo.name.common]);
-        setFilterData(oldArray => [...oldArray, countryInfo.name.common]);
-      });
+      const names = data.map(countryInfo => countryInfo.name.common);
+      setData(names);
+      setFilterData(names);
+      // data.forEach((countryInfo) => {
+      //   setData([...dataState, countryInfo.name.common]);
+      //   setFilterData([...dataFilterState, countryInfo.name.common]);
+      // });
     }
     getData();
   }, [])

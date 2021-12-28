@@ -32,9 +32,10 @@ import reportWebVitals from "./reportWebVitals";
 // import MarkingAndDeleting from "./pages/18.4-marking_and_deleting/18.4-marking_and_deleting";
 // import SimpleFetch from "./pages/18.5-simple_fetch/18.5-simple_fetch";
 // import CountriesOfTheWorld from "./pages/19.2-countries/19.2-countries";
-import Algolia from "./pages/19.3-algolia/19.3-algolia";
+// import Algolia from "./pages/19.3-algolia/19.3-algolia";
+import RefactorApiFunctions from "./pages/19.4-refactor/19.4-refactor";
 
-ReactDOM.render(<Algolia />, document.getElementById("root"));
+ReactDOM.render(<RefactorApiFunctions />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
