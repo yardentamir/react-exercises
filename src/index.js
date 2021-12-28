@@ -35,9 +35,10 @@ import reportWebVitals from "./reportWebVitals";
 // import Algolia from "./pages/19.3-algolia/19.3-algolia";
 // import RefactorApiFunctions from "./pages/19.4-refactor/19.4-refactor";
 // import CancelRequest from "./pages/20.1-cancel_request/20.1-cancel_request";
-import UseRefEditing from "./pages/21.1-editing/21.1-editing";
+// import UseRefEditing from "./pages/21.1-editing/21.1-editing";
+import PlayPause from "./pages/21.2-play_pause/21.2-play_pause";
 
-ReactDOM.render(<UseRefEditing />, document.getElementById("root"));
+ReactDOM.render(<PlayPause />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
