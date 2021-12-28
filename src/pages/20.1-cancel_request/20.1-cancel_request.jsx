@@ -49,7 +49,7 @@ export default function ShowText() {
 
   return (
     <div>
-      <CustomButton text={buttonTextState} callback={debounce(function () { handelClick() }, 1000)} />
+      <CustomButton text={buttonTextState} callback={debounce(function () { handelClick() }, 500)} />
       <ul>
         {renderData()}
       </ul>

@@ -34,9 +34,10 @@ import reportWebVitals from "./reportWebVitals";
 // import CountriesOfTheWorld from "./pages/19.2-countries/19.2-countries";
 // import Algolia from "./pages/19.3-algolia/19.3-algolia";
 // import RefactorApiFunctions from "./pages/19.4-refactor/19.4-refactor";
-import CancelRequest from "./pages/20.1-cancel_request/20.1-cancel_request";
+// import CancelRequest from "./pages/20.1-cancel_request/20.1-cancel_request";
+import UseRefEditing from "./pages/21.1-editing/21.1-editing";
 
-ReactDOM.render(<CancelRequest />, document.getElementById("root"));
+ReactDOM.render(<UseRefEditing />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

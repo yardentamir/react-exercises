@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import CustomButton from '../../Components/CustomButton';
-import CustomInput from '../../Components/CustomInput';
 
 export default function Editing() {
 
